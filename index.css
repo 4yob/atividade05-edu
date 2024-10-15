@@ -5,6 +5,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root {
+    --cor-body: black;
+    --cor-fonte: black;
+    --cor-header-footer: rgb(76, 100, 241);
+    --cor-nav: rgb(113, 209, 233);
+    --cor-section: rgb(235, 220, 15);
+    --cor-article: rgb(235, 149, 110);
+    --cor-aside: white;
+}
+
 h1 {
     font-size: 2rem;
 }
@@ -13,12 +23,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: var(--cor-body);
 }
 
 header {
     display: flex;
-    background-color: rgb(76, 100, 241);
+    background-color: var(--cor-header-footer);
     height: 6.5rem;
     width: 45rem;
     align-items: center;
@@ -28,7 +38,7 @@ header {
 
 nav {
     display: flex;
-    background-color: rgb(113, 209, 233);
+    background-color: var(--cor-nav);
     height: 6.5rem;
     width: 45rem;
     align-items: center;
@@ -42,9 +52,8 @@ nav {
     margin-top: 1%;
     justify-content: space-around;
     align-items: center;
-    width: 42.5%;
+    width: 45rem;
 }
-
 .container .small-container {
     display: flex;
     flex-direction: column;
@@ -52,7 +61,7 @@ nav {
 
 section {
     display: flex;
-    background-color: rgb(235, 220, 15);
+    background-color: var(--cor-section);
     height: 15rem;
     width: 30rem;
     align-items: center;
@@ -62,7 +71,7 @@ section {
 
 article {
     display: flex;
-    background-color: rgb(235, 149, 110);
+    background-color: var(--cor-article);
     height: 15rem;
     width: 30rem;
     align-items: center;
@@ -73,13 +82,14 @@ article {
 .container .small-container2 {
     display: flex;
     justify-content: end;
+    width: 30rem;
 }
 
 aside {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor-aside);
     height: 30rem;
-    width: 12rem;
+    width: 14rem;
     align-items: center;
     justify-content: center;
     margin-top: 1%;
@@ -87,7 +97,7 @@ aside {
 
 footer {
     display: flex;
-    background-color: rgb(76, 100, 241);
+    background-color: var(--cor-header-footer);
     height: 6.5rem;
     width: 45rem;
     align-items: center;
